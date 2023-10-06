@@ -1,0 +1,13 @@
+main work outline
+    + create navbar
+    + routing
+    + create body
+    + create footer
+
+other 
+    + font implement
+    + animation
+    + loading animation
+    + darkmode
+    + generate QR code
+
