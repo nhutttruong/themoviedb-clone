@@ -1,4 +1,4 @@
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/DesktopNavbar";
 import { Routes, Route } from "react-router-dom";
 import {
   PopularMovies,
@@ -25,11 +25,14 @@ import { API, Support, Leaderboard, Discussions } from "./pages/More";
 
 import Home from "./pages/Home";
 import MovieLayout from "./components/MovieLayout";
+import MobileNavBar from "./components/Navbar/MobileNavBar";
+import MovieDetail from "./components/MovieStat/MovieDetail";
 
 function App() {
   return (
     <div>
       <Navbar />
+      <MobileNavBar />
 
       <Routes>
         <Route path="/" element={<Home />}></Route>
@@ -38,6 +41,7 @@ function App() {
           <Route path="now-playing" element={<NowPlaying />}></Route>
           <Route path="upcoming" element={<UpComing />}></Route>
           <Route path="top-rated" element={<TopRatedMovies />}></Route>
+          <Route path="id/:id" element={<MovieDetail />}></Route>
         </Route>
 
         <Route path="/tvshows">

@@ -196,3 +196,142 @@ export const Languages = [
   "Portugese",
   "Korean",
 ];
+
+// sort options
+
+export const SortOptions = [
+  { label: "Popularity Descending" },
+  { label: "Popularity Ascending" },
+  { label: "Rating Descending" },
+  { label: "Rating Ascending" },
+  { label: "Release Date Descending" },
+  { label: "Release Date Ascending" },
+  { label: "Title A-Z" },
+  { label: "Title Z-A" },
+];
+
+// flags
+
+export const FlagOptions = [
+  {
+    id: "ar",
+    country: "Argentina",
+  },
+  {
+    id: "au",
+    country: "Australia",
+  },
+  {
+    id: "be",
+    country: "Belgium",
+  },
+  {
+    id: "br",
+    country: "Brazil",
+  },
+
+  {
+    id: "ca",
+    country: "Canada",
+  },
+  {
+    id: "cn",
+    country: "China",
+  },
+  {
+    id: "cu",
+    country: "Cuba",
+  },
+  {
+    id: "eg",
+    country: "Egypt",
+  },
+
+  {
+    id: "es",
+    country: "Spain",
+  },
+  {
+    id: "fi",
+    country: "Finland",
+  },
+  {
+    id: "fr",
+    country: "France",
+  },
+  {
+    id: "gb-eng",
+    country: "England",
+  },
+
+  {
+    id: "gb-wls",
+    country: "Wales",
+  },
+  {
+    id: "hk",
+    country: "HongKong",
+  },
+  {
+    id: "in",
+    country: "India",
+  },
+  {
+    id: "ir",
+    country: "Iran",
+  },
+
+  {
+    id: "jp",
+    country: "Japan",
+  },
+  {
+    id: "kr",
+    country: "Korean",
+  },
+  {
+    id: "la",
+    country: "Laos",
+  },
+  {
+    id: "mx",
+    country: "Mexico",
+  },
+
+  {
+    id: "pt",
+    country: "Portugal",
+  },
+  {
+    id: "tl",
+    country: "Timor Lester",
+  },
+  {
+    id: "vn",
+    country: "Viet Nam",
+  },
+];
+
+// movie genres
+
+export const Genres = [
+  { id: "Action", label: "Action" },
+  { id: "Adventure", label: "Adventure" },
+  { id: "Animation", label: "Animation" },
+  { id: "Comedy", label: "Comedy" },
+  { id: "Crime", label: "Crime" },
+  { id: "Documentary", label: "Documentary" },
+  { id: "Drama", label: "Drama" },
+  { id: "Family", label: "Family" },
+  { id: "Fantasy", label: "Fantasy" },
+  { id: "History", label: "History" },
+  { id: "Horror", label: "Horror" },
+  { id: "Music", label: "Music" },
+  { id: "Mystery", label: "Mystery" },
+  { id: "Romance", label: "Romance" },
+  { id: "Science Fiction", label: "Science Fiction" },
+  { id: "TV Movie", label: "TV Movie" },
+  { id: "Thriller", label: "Thriller" },
+  { id: "War", label: "War" },
+  { id: "Western", label: "Western" },
+];

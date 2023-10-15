@@ -1,13 +1,10 @@
-import { createContext, ReactNode, useContext, useState } from "react";
+import { createContext, ReactNode, useContext } from "react";
 
 type AppContextProviderProps = {
   children: ReactNode;
 };
 
-type AppContext = {
-  showNavBar: boolean;
-  setShowNavBar: React.Dispatch<React.SetStateAction<boolean>>;
-};
+type AppContext = {};
 
 const AppContext = createContext({} as AppContext);
 
@@ -17,11 +14,5 @@ export function useAppContext() {
 }
 
 export function AppContextProvieder({ children }: AppContextProviderProps) {
-  const [showNavBar, setShowNavBar] = useState(true);
-
-  return (
-    <AppContext.Provider value={{ showNavBar, setShowNavBar }}>
-      {children}
-    </AppContext.Provider>
-  );
+  return <AppContext.Provider value={{}}>{children}</AppContext.Provider>;
 }

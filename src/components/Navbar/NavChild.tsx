@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
-import { titleToLink, noSpaces } from "../utilities";
-import { NavListElements } from "../constants";
+import { titleToLink, noSpaces } from "../../utilities";
+import { NavListElements } from "../../constants";
 
 type NavChildProps = {
   navChildId: string;
