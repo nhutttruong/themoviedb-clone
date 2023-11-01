@@ -5,8 +5,8 @@ const MovieLayout = () => {
   const location = useLocation();
 
   return (
-    <div className="w-full flex justify-center ">
-      <div className="px-[40px] max-w-[1400px]">
+    <div className="w-full flex justify-center">
+      <div className="px-[40px] max-w-[1400px] overflow-hidden">
         <div
           className={`${
             location.pathname.includes("id") ? "" : "flex justify-between"

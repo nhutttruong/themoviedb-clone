@@ -5,8 +5,6 @@ type MovieStatsProps = {
 import { useEffect, useState } from "react";
 
 import MainMovieDetail from "./MainMovieDetail";
-import LeftSection from "./LeftSection";
-import RightSection from "./RightSection";
 import FutherInfo from "./FutherInfo";
 
 const MovieStats = ({ movieDetail }: MovieStatsProps) => {
@@ -32,11 +30,11 @@ const MovieStats = ({ movieDetail }: MovieStatsProps) => {
   }, [movieDetail]);
 
   return (
-    <div className="w-full">
-      {/* movie detail */}
+    <div className="w-full ">
+      {/* movie detail (above) */}
       <MainMovieDetail movieDetail={movieDetail} />
 
-      {/* futher info */}
+      {/* futher info (below) */}
       <FutherInfo movieDetail={movieDetail} movieKeywords={movieKeywords} />
     </div>
   );

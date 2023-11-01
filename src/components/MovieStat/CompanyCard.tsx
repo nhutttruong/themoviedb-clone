@@ -13,7 +13,7 @@ const CompanyCard = ({ logo_path, name }: CompanyCardProps) => {
             : `https://image.tmdb.org/t/p/w500/${logo_path}`
         }`}
         alt="company logo"
-        className="w-full h-[150px] object-cover rounded-t-lg"
+        className="h-[160px] rounded-t-lg p-2"
         loading="lazy"
       />
       <h3 className="p-2 text-lg font-semibold truncate w-[180px]">{name}</h3>

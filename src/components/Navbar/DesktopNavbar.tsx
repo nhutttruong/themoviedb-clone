@@ -1,21 +1,27 @@
 import { plus, bell, profileSetting, search } from "../../assets/headerIcons";
 
+import { NavLink } from "react-router-dom";
 import { NavList } from "../../constants";
 import { titleToLink } from "../../utilities";
 import NavChild from "./NavChild";
 
 const Navbar = () => {
   return (
-    <div className="flex header-footer-bg items-center w-full justify-center ">
-      <div className="hidden md:flex py-3 items-center justify-between sticky top-0 z-[100] max-w-[1400px] w-full  px-[40px]">
+    <div className="flex header-footer-bg items-center justify-center">
+      <div
+        className="hidden md:flex py-3 items-center justify-between sticky top-0 z-[100] 
+       w-full max-w-[1400px] px-[40px]"
+      >
         {/* left container */}
         <div className="items-center gap-8 flex ">
-          <h1
-            className="font-bold text-3xl 
+          <NavLink to="/">
+            <h1
+              className="font-bold text-3xl 
         bg-clip-text text-transparent bg-gradient-to-r from-[#8ECEA2] to-[#3EBEC8] tracking-[0.05rem]"
-          >
-            TMDB
-          </h1>
+            >
+              TMDB
+            </h1>
+          </NavLink>
 
           {NavList.map((item) => (
             <NavChild

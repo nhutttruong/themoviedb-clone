@@ -1,8 +1,11 @@
 import { useState, useEffect } from "react";
+import ReactLoading from "react-loading";
+
 import MovieCard from "../../components/MovieCard";
 
 const Popular = () => {
   const [movieList, setMovieList] = useState<any[]>([]);
+  const [isLoading, setIsLoading] = useState(false);
 
   const options = {
     method: "GET",
@@ -14,14 +17,25 @@ const Popular = () => {
   };
 
   useEffect(() => {
+    setIsLoading(true);
     fetch(
       "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1",
       options
     )
       .then((response) => response.json())
-      .then((response) => setMovieList(response?.results))
+      .then((response) => {
+        setMovieList(response?.results);
+        setIsLoading(false);
+      })
       .catch((err) => console.error(err));
   }, []);
+  if (isLoading) {
+    return (
+      <div className="flex items-center">
+        <ReactLoading type="spin" color="gray" height={500} width={300} />;
+      </div>
+    );
+  }
 
   return (
     <div className="font-bold text-2xl mt-6 w-full">

@@ -13,12 +13,13 @@ import play from "../../assets/movieDetailIcons/play.png";
 const MainMovieDetail = ({ movieDetail }: MovieStatsProps) => {
   return (
     <div
-      className="flex items-center justify-center w-full 
- bg-[#1E0B0B]"
+      className="flex items-center justify-center 
+ bg-[#1E0B0B] pb-10"
     >
       <div
-        className="h-[500px] w-full max-w-[1400px] flex items-center justify-between mt-10
-    px-[40px]"
+        className="md:min-h-[500px] w-full max-w-[1400px] 
+        flex md:flex-row flex-col md:justify-between items-center justify-center
+         mt-10 px-[40px] pb-10 md:pb-0"
       >
         <img
           src={`https://image.tmdb.org/t/p/w500/${movieDetail.poster_path}`}
@@ -27,14 +28,14 @@ const MainMovieDetail = ({ movieDetail }: MovieStatsProps) => {
         />
 
         <div
-          className="relative flex flex-col h-full
+          className="md:relative flex flex-col h-full
     bg-[#1E0B0B] basis-3/4 pl-4 overflow-hidden"
         >
           <img
             src={`https://image.tmdb.org/t/p/w500/${movieDetail.backdrop_path}`}
             alt=""
             className="
-     absolute object-cover w-full h-full opacity-40 scale-125 "
+     absolute object-cover w-full h-full opacity-40 scale-125 hidden md:block"
           />
 
           {/* movie title */}
@@ -127,7 +128,7 @@ const MainMovieDetail = ({ movieDetail }: MovieStatsProps) => {
           </div>
 
           {/* overview */}
-          <div className="pt-3 flex flex-col gap-3 z-20">
+          <div className="pt-3 flex flex-col gap-3 z-20 pb-5">
             <h3 className="text-xl font-semibold text-white">Overview</h3>
             <p className="text-white max-w-[900px] basis-11/12">
               {movieDetail.overview}

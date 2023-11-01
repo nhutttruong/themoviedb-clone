@@ -93,7 +93,7 @@ const RightSection = ({ movieDetail, movieKeywords }: RightSectionProps) => {
           {movieKeywords?.map((keyword) => (
             <div
               key={keyword?.id}
-              className="px-3 rounded-[4px] bg-[#E5E5E5] border-2 border-gray-300 hover:cursor-pointer hover:border-[#E5E5E5]"
+              className="px-3 rounded-[4px] bg-[#E5E5E5]  hover:cursor-pointer hover:border-[#E5E5E5]"
             >
               {keyword.name}
             </div>
